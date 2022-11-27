@@ -5,12 +5,18 @@
  
  ## Dataset
  For training our model we use [Nutrition5k](https://github.com/google-research-datasets/Nutrition5k) and manually collected dataset, where we parse ~60k photos and dishes info from [Яндекс.Еда](https://eda.yandex.ru/)
+
 [Link to shared google drive](https://drive.google.com/drive/folders/16KqOlY0Hnnk4xDJMn3H_NG7aR-TYcE03?usp=share_link)
 
 ## Model
 Our model is build on top of the [Google Inception-v3](https://paperswithcode.com/method/inception-v3)
 
-**// TODO**
+Structure:
+- Inception-v3
+- AveragePooling (3x3 stride-2)
+- 2xFullyConnected Layers(4096) + LeakyReLu activation
+
+![Model](model.png)
  
  ## Pipeline description
  1. Preprocessing
@@ -39,3 +45,9 @@ Our model is build on top of the [Google Inception-v3](https://paperswithcode.co
  - Evgeny Petrashko e.petrashko@innopolis.university
  - Dmitrii Shabalin d.shabalin@innopolis.university
  - Aydar Khuzin ay.khuzin@innopolis.univeristy
+ 
+ ## Team responsibilities
+ - Kamil: Creating classification model
+ - Evgeny: Preprocessing and optimization
+ - Dmitrii: Creating model for predicting calories (nutrition info)
+ - Aydar: Custom dataset collecting and model optimization
