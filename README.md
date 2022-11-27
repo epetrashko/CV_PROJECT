@@ -9,8 +9,16 @@
 [Link to shared google drive](https://drive.google.com/drive/folders/16KqOlY0Hnnk4xDJMn3H_NG7aR-TYcE03?usp=share_link)
 
 ## Model
-Our model is build on top of the [Google Inception-v3](https://paperswithcode.com/method/inception-v3)
+Our models is build on top of the [Google Inception-v3](https://paperswithcode.com/method/inception-v3)
 
+### Image Classification
+Structure:
+- Inception-v3
+- Batch Normalization
+- Dropout
+- FullyConnected Layer + SoftMax Activation
+
+### Calories estimation
 Structure:
 - Inception-v3
 - AveragePooling (3x3 stride-2)
@@ -20,6 +28,10 @@ Structure:
 ![Model](model.png)
  
  ## Pipeline description
+ ### Image Classification
+ 
+ ### Calories estimation
+ 
  1. Preprocessing
  - Prepare all needed images as well as csv with useful information (calories, mass, proteins, fats, carbohydrates, filename)
  - Iterating over csv transform images to model appropriate input format:
@@ -37,7 +49,7 @@ Structure:
 2. Model training
 - Pass data saved in .npz files to DataLoader, in order to enable batch mode in model
 - Pass DataLoader to model with appropriate ```BATCH_SIZE```.
-- Run on epochs > 10
+- Run on epochs > 30
  
  
  
@@ -45,10 +57,10 @@ Structure:
  - Kamil Agliullin k.agliullin@innopolis.university
  - Evgeny Petrashko e.petrashko@innopolis.university
  - Dmitrii Shabalin d.shabalin@innopolis.university
- - Aydar Khuzin ay.khuzin@innopolis.univeristy
+ - Aidar Khuzin ay.khuzin@innopolis.univeristy
  
  ## Team responsibilities
  - Kamil: Creating classification model
  - Evgeny: Preprocessing and optimization
  - Dmitrii: Creating model for predicting calories (nutrition info)
- - Aydar: Custom dataset collecting and model optimization
+ - Aidar: Custom dataset collecting and model optimization
