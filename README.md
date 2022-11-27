@@ -28,8 +28,7 @@ Structure:
 ![Model](model.png)
  
  ## Pipeline description
- ### Image Classification
- 
+
  ### Calories estimation
  
  1. Preprocessing
