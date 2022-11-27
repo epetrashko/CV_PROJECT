@@ -14,7 +14,8 @@ Our model is build on top of the [Google Inception-v3](https://paperswithcode.co
 Structure:
 - Inception-v3
 - AveragePooling (3x3 stride-2)
-- 2xFullyConnected Layers(4096) + LeakyReLu activation
+- 2xFullyConnected Layers(4096) + LeakyReLu activations
+- 2xFullyConnected Layers(4096x1) +  LeakyReLu activation for each regression task
 
 ![Model](model.png)
  
