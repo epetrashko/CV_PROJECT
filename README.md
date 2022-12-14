@@ -18,6 +18,7 @@ Structure:
 - Dropout
 - FullyConnected Layer + SoftMax Activation
 
+![Clf Model](model_classification.png)
 ### Calories estimation
 Structure:
 - Inception-v3
