@@ -29,7 +29,17 @@ Structure:
 ![Model](model.png)
  
  ## Pipeline description
-
+ ### Image classification
+ 
+ 1. Preprocessing
+ - Load Food101 dataset, split into train and test
+ - Apply transformations to images, such as normalization and resizing.
+ - Batching the dataset
+ 2. Model training
+ - Loading Inception V3 without its classification layer
+ - Freezing Inception V3 pretrained layers, and adding our own classification layer
+ - Training for ~30 epochs
+ 
  ### Calories estimation
  
  1. Preprocessing
