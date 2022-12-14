@@ -5,6 +5,7 @@
  
  ## Dataset
  For training the classification model we use [Food101](https://paperswithcode.com/dataset/food-101)
+ 
  For training the estimation model we use [Nutrition5k](https://github.com/google-research-datasets/Nutrition5k) and manually collected dataset, where we parse ~60k photos and dishes info from [Яндекс.Еда](https://eda.yandex.ru/)
 
 [Link to shared google drive](https://drive.google.com/drive/folders/16KqOlY0Hnnk4xDJMn3H_NG7aR-TYcE03?usp=share_link)
